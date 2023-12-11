@@ -1,32 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
 #calculator {
-    margin: 20px;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .area, .total-r-value {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .area label, .total-r-value label {
-    margin-right: 10px;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
 }
 
 button {
-    margin-top: 10px;
-    padding: 5px 15px;
-    background-color: #4CAF50;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #0056b3;
     color: white;
     border: none;
-    border-radius: 3px;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #004494;
 }
 
 #result {
     margin-top: 20px;
+    padding: 10px;
+    background-color: #e9e9e9;
+    border-radius: 4px;
+}
+
+#resultsTable {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+#resultsTable th, #resultsTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#resultsTable th {
+    background-color: #f2f2f2;
 }
